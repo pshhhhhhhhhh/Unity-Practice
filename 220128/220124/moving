@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Player_move : MonoBehaviour
 {
-    public float move_Speed = 0.1f; /
-    float x_Speed = 0; //x
-    float y_Speed = 0; //y
+    public float move_Speed = 0.1f; //속도 초기값
+    float x_Speed = 0; //x축 방향변수
+    float y_Speed = 0; //y축 방향변수
     bool leftFlag = false;
     // Start is called before the first frame update
     void Start()
@@ -21,24 +21,24 @@ public class Player_move : MonoBehaviour
         x_Speed = 0;
         y_Speed = 0;
 
-        if (Input.GetKey("right"))
+        if (Input.GetKey("right")) //오른쪽 이동
         {
             x_Speed = move_Speed;
             leftFlag = false;
             // this.transform.Translate(x_Speed, 0, 0);
         }
-        if (Input.GetKey("left"))
+        if (Input.GetKey("left")) //왼쪽 이동
         {
             x_Speed = -move_Speed;
             leftFlag = true;
             // this.transform.Translate(x_Speed, 0, 0);
         }
-        if (Input.GetKey("up"))
+        if (Input.GetKey("up")) //위로 이동
         {
             y_Speed = move_Speed;
             // this.transform.Translate(0, y_Speed, 0);
         }
-        if (Input.GetKey("down"))
+        if (Input.GetKey("down")) //아래로 
         {
             y_Speed = -move_Speed;
             // this.transform.Translate(0, y_Speed, 0);
@@ -49,7 +49,7 @@ public class Player_move : MonoBehaviour
 
     private void FixedUpdate()
     {
-           this.transform.Translate(x_Speed, y_Speed, 0); //
-           this.GetComponent<SpriteRenderer>().flipX = leftFlag; /
+           this.transform.Translate(x_Speed, y_Speed, 0); //오브젝트 이동
+           this.GetComponent<SpriteRenderer>().flipX = leftFlag; //좌우 방향전환시 스프라이트 방향전환
     }
 }
