@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; //¾ÀºÒ·¯¿À±â »ç¿ëÇÒ¶§ ÀÔ·Â
+using UnityEngine.SceneManagement; //ì”¬ë¶ˆëŸ¬ì˜¤ê¸° ì‚¬ìš©í• ë•Œ ì…ë ¥
+
+//ì¬ì‹œì‘ í™”ë©´ ìŠ¤í¬ë¦½íŠ¸
 public class RestartScene : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -13,10 +15,10 @@ public class RestartScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("r")) //rÅ°¸¦ ´­·¶À»¶§
+        if (Input.GetKeyDown("r")) //rí‚¤ë¥¼ ëˆŒë €ì„ë•Œ
         {
-            this.GetComponent<AudioSource>().Play(); // ¼Ò¸®Àç»ı
-            SceneManager.LoadScene("SampleScene"); //SampleScene ºÒ·¯¿À±â
+            this.GetComponent<AudioSource>().Play(); // ì†Œë¦¬ì¬ìƒ
+            SceneManager.LoadScene("SampleScene"); //SampleScene ë¶ˆëŸ¬ì˜¤ê¸°
         }
     }
 }
