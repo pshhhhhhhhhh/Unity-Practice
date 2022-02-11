@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // UI»ç¿ë½Ã ¹İµå½Ã ÀÔ·Â
+using UnityEngine.UI; // UIì‚¬ìš©ì‹œ ë°˜ë“œì‹œ ì…ë ¥
 
-//ÇÇ°İ½Ã ¼Ò¸®Àç»ó ½ºÅ©¸³Æ®
+//í”¼ê²©ì‹œ ì†Œë¦¬ì¬ìƒ ìŠ¤í¬ë¦½íŠ¸
 public class Sound2 : MonoBehaviour
 {
     GameObject Soundplayer2;
@@ -18,7 +18,7 @@ public class Sound2 : MonoBehaviour
     {
         
     }
-    public void playsound2() //¼Ò¸® Àç»ı ÇÔ¼ö 
+    public void playsound2() //ì†Œë¦¬ ì¬ìƒ í•¨ìˆ˜ 
     {
         this.Soundplayer2.GetComponent<AudioSource>().Play();
     }
