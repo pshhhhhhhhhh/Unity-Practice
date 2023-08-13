@@ -4,8 +4,6 @@ firstsub폴더 -> 오브젝트 회전
 
 secondsub 폴더 -> 플래피 버드 만들어보기
 
-
 3rdsub 폴더 -> 소코반류 게임
-
 
 4thsub 폴더 -> 피하기 게임
